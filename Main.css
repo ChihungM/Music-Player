@@ -8,10 +8,10 @@ body {
     position: absolute;
     overflow: hidden;
 }
-/*#bg img{
+#bg img{
     height: 120vh;
     width: 105%;
-    -webkit-filter:blur(20px);
+    -webkit-filter: blur(20px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,4 +24,42 @@ body {
     background-color: rgba(0,0,0,.2);
     position: absolute;
     z-index: 99%
-}*/
+}
+#main{
+    width: 25%;
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+#image img{
+    height: 180px;
+    width: 100%;
+    margin-top: -5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#player{
+    padding: 25px;
+    color: #333;
+}
+#songTitle{
+    font-family: monospace;
+    font-size: 18px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#buttons{
+    height: 50px;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
