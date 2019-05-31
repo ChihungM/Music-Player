@@ -1,30 +1,38 @@
-body {
+body{
     margin: 0px;
     padding: 0px;
 }
+/* Fits the BG to the corners */
+
 #bg{
     height: 100vh;
     width: 100%;
     position: absolute;
     overflow: hidden;
 }
+/* Fits the image to the window */
+
 #bg img{
     height: 120vh;
     width: 105%;
-    -webkit-filter: blur(20px);
+    -webkit-filter:blur(20px);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
+/* ?? */
+
 #blackLayer{
     height: 100vh;
     width: 100%;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,0.2);
     position: absolute;
-    z-index: 99%
+    z-index: 99;
 }
+/* ?? */
+
 #main{
     width: 25%;
     background-color: #fff;
@@ -35,18 +43,27 @@ body {
     transform: translate(-50%, -50%);
     z-index: 999;
 }
+/* Positioning of the music player */
+
+
 #image img{
     height: 180px;
     width: 100%;
     margin-top: -5px;
     border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
+/*Adjustment of music player size */
+
 #player{
     padding: 25px;
     color: #333;
 }
+/* Player buttons */
+
 #songTitle{
+    width: 300px;
+    text-align: center;
     font-family: monospace;
     font-size: 18px;
     position: absolute;
@@ -54,6 +71,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* Text attributes */
+
 #buttons{
     height: 50px;
     width: 100%;
@@ -61,5 +80,74 @@ body {
     position: relative;
     top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
+/* ?? */
+
+#play,#next,#pre{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: royalblue;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Play button design */
+
+#next{
+    width: 30px;
+    height: 30px;
+    left: 70%;
+}
+/* Alignment of the next button */
+
+#pre{
+    width: 30px;
+    height: 30px;
+    left: 30%;
+}
+/* Alignment of the pre button */
+
+#play img, #next img, #pre img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Positioning */
+
+#seek-bar{
+    width: 375px;
+    height: 5px;
+    background-color: gray;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+/* Music player bar */
+
+#fill{
+    height: 5px;
+    width: 10px;
+    background-color: royalblue;
+    border-radius: 20px;
+}
+
+/* Progress bar */
+
+#handle{
+    width: 8px;
+    height: 8px;
+    background-color: royalblue;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+
+/* Bar scroller */
